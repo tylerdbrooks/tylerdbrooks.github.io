@@ -7,12 +7,13 @@
     <a-scene embedded arjs>
       
       <a-assets>
-          <a-asset-item id="skull" src="https://raw.githubusercontent.com/tylerdbrooks/tylerdbrooks.github.io/master/ar-obj-test/skull-gltf/scene.gltf"></a-asset-item>
+          <a-asset-item id="cesiumman" src="https://raw.githubusercontent.com/tylerdbrooks/tylerdbrooks.github.io/master/ar-obj-test/cesiumman-gltf/cesium-man.gltf"></a-asset-item>
       </a-assets>
       
       <a-marker preset="custom" type="pattern" url="https://tylerdbrooks.github.io/ar-obj-test/marker.patt">
           <a-entity 
-              gltf-model="#skull"
+              animation-mixer
+              gltf-model="#cesiumman"
               scale="2 2 2">              
           </a-entity>
       </a-marker>
