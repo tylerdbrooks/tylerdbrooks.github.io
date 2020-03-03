@@ -4,10 +4,13 @@
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>  
+        <a-assets>
+          <a-asset-item id="raptor" src="https://raw.githubusercontent.com/tylerdbrooks/tylerdbrooks.github.io/master/raptor.obj"></a-asset-item>
+        </a-assets>
     
       <a-marker type="pattern" preset="custom" url="https://raw.githubusercontent.com/tylerdbrooks/tylerdbrooks.github.io/master/marker.patt">
             <a-entity 
-            obj-model=”obj: url(https://raw.githubusercontent.com/tylerdbrooks/tylerdbrooks.github.io/master/raptor.obj)”>
+              obj-model=”obj: #raptor”>
             </a-entity>
       </a-marker>
       
