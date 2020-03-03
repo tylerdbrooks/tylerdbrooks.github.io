@@ -9,7 +9,6 @@
     <a-scene embedded arjs = 'trackingMethod: best;'>
     <a-scene hit-testing-enabled = 'true'>
       
-      <a-marker preset="hiro">
         
           <a-sphere position='0.5 1.5 -0.5' color='white' radius='0.15'>
             <a-animation
@@ -20,9 +19,9 @@
                 repeat='indefinite'></a-animation>         
           </a-sphere>
         
-      </a-marker>
       
-      <a-entity camera></a-entity>
+      </a-anchor>
+          <a-camera-static/>
       
     </a-scene>
       
