@@ -9,16 +9,11 @@
                   material='color: blue;
                   transparency: true;
                   opacity: 0.5'
-                  radius='1'></a-dodecahedron>
+                  radius='1'
+                      animation='property: rotation; to: 0 360 0; loop: true; dur: 10000'>
+          </a-dodecahedron>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
-
-<a-circle position="0 0 4" 
-          material="side: double; 
-          color: #EF2D5E; 
-          transparent: true; 
-          opacity: 0.5" 
-          geometry="primitive:circle;radius:0.5" radius="0.5"></a-circle>
