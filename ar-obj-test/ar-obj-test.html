@@ -10,7 +10,8 @@
           <a-asset-item id="cesiumman" src="https://raw.githubusercontent.com/tylerdbrooks/tylerdbrooks.github.io/master/ar-obj-test/cesiumman-gltf/cesium-man.gltf"></a-asset-item>
       </a-assets>
       
-      <a-marker preset="custom" type="pattern" url="https://tylerdbrooks.github.io/ar-obj-test/marker.patt">
+      <!-- <a-marker preset="custom" type="pattern" url="https://tylerdbrooks.github.io/ar-obj-test/marker.patt"> -->
+      <a-marker id="animated-marker" type='barcode' value='12'>
           <a-entity 
               animation-mixer
               gltf-model="#cesiumman"
