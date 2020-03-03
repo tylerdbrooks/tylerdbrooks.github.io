@@ -5,13 +5,12 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker type="pattern" preset="custom" url="https://raw.githubusercontent.com/tylerdbrooks/tylerdbrooks.github.io/master/marker.patt">
-          <a-dodecahedron 
+          <a-torus-knot 
                   material="color: blue;
                   transparency: true;
                   opacity: 0.5"
-                  radius="1"
                       animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
-          </a-dodecahedron>
+          </a-torus-knot>
           <a-sphere position="-2 2 -2" radius="1" color="#EF2D5E"</a-sphere>
       </a-marker>
       <a-entity camera></a-entity>
