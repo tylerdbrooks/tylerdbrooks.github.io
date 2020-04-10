@@ -7,7 +7,13 @@
 		<a-assets>
 			<video id ="test-video" crossorigin="anonymous" autoplay loop="true" muted="true" src="https://github.com/tylerdbrooks/tylerdbrooks.github.io/blob/master/arpostertest/video/test-video.mp4?raw=true"></video>
 		</a-assets>
-
+		
+		<div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+			<button>
+				wtf
+			</button>
+		</div>
+		
 		<a-scene embedded arjs vr-mode-ui="enabled: false">
 			<a-marker preset = "hiro">
 				<!-- <a-box position='0 0.5 0' material='color: blue; opacity: 0.5;'></a-box> -->
@@ -15,12 +21,10 @@
 			</a-marker>
 			<a-entity camera></a-entity>		
 		</a-scene>
-                
-		<button type="button">Test</button>
 		
 
 		<script>
-     		    window.addEventListener('click', function () {
+     		    document.querySelector("button").addEventListener('click', function () {
      		    var v = document.querySelector('#test-video');
       		    v.play();
       	            });
