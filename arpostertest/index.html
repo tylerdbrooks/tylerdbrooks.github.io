@@ -5,7 +5,7 @@
 	<body style ='margin : 0px; overflow: hidden;'>
 
 		<a-assets>
-			<video id ="test-video" autoplay loop="true" muted="true" src="https://github.com/tylerdbrooks/tylerdbrooks.github.io/blob/master/arpostertest/video/test-video.mp4?raw=true"></video>
+			<video id ="test-video" crossorigin="anonymous" autoplay loop="true" muted="true" src="https://github.com/tylerdbrooks/tylerdbrooks.github.io/blob/master/arpostertest/video/test-video.mp4?raw=true"></video>
 		</a-assets>
 
 		<a-scene embedded arjs>
@@ -15,5 +15,12 @@
 			</a-marker>
 					<a-entity camera></a-entity>
 		</a-scene>
+		<script>
+     		    window.addEventListener('click', function () {
+     		    var v = document.querySelector('#test-video');
+      		    v.play();
+      	            });
+   	        </script>
 	</body>
+	
 </html>
