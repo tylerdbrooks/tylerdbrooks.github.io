@@ -8,9 +8,9 @@
 		
 		<div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
 			<!-- <button onclick="playVideo()"> -->
-			<!--<button>
+			<button>
 				Play Video
-			</button> -->
+			</button>
 		</div>
 		
 		<a-scene embedded arjs vr-mode-ui="enabled: false">
@@ -28,15 +28,15 @@
 		
 
 		<script>
-		    window.addEventListener('click', function () {
-     		    var v = document.querySelector('#test-video');
-      		    v.play();
-      	            });
-			
-     		    //document.querySelector("button").addEventListener('click', function () {
+		    //window.addEventListener('click', function () {
      		    //var v = document.querySelector('#test-video');
       		    //v.play();
       	            //});
+			
+     		    document.querySelector("button").addEventListener('click', function () {
+     		    var v = document.querySelector('#test-video');
+      		    v.play();
+      	            });
 			
 		//function playVideo(){
 		    //var v = document.querySelector('#test-video');
