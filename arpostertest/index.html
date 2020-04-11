@@ -5,11 +5,12 @@
 	<body style ='margin : 0px; overflow: hidden;'>
 
 		<a-assets>
-			<video id ="test-video" crossorigin="anonymous" autoplay loop="true" muted="true" src="https://github.com/tylerdbrooks/tylerdbrooks.github.io/blob/master/arpostertest/video/test-video.mp4?raw=true"></video>
+			<video id ="test-video" crossorigin="anonymous" autoplay loop="true" muted="true" playsinline src="https://github.com/tylerdbrooks/tylerdbrooks.github.io/blob/master/arpostertest/video/test-video.mp4?raw=true"></video>
 		</a-assets>
 		
 		<div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-			<button onclick="playVideo()">
+			<!-- <button onclick="playVideo()"> -->
+			<button>
 				Play Video
 			</button>
 		</div>
@@ -24,14 +25,20 @@
 		
 
 		<script>
+		    window.addEventListener('click', function () {
+     		    var v = document.querySelector('#test-video');
+      		    v.play();
+      	            });
+			
      		    //document.querySelector("button").addEventListener('click', function () {
      		    //var v = document.querySelector('#test-video');
       		    //v.play();
       	            //});
-		function playVideo(){
-		    var v = document.querySelector('#test-video');
-      		    v.play();	
-		}
+			
+		//function playVideo(){
+		    //var v = document.querySelector('#test-video');
+      		    //v.play();	
+		//}
 
    	        </script>
 	</body>
